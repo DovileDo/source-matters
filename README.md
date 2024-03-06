@@ -2,4 +2,22 @@
 
 This repository contains the code and results included in the paper (currently under review, link coming later).
 
-Transfer learning has become an essential part of medical imaging classification algorithms, often leveraging ImageNet weights. However, the domain shift from natural to medical images has prompted alternatives such as RadImageNet, often demonstrating comparable classification performance. We argue that even if the performance is on par, using models pre-trained on medical datasets may offer benefits like enhanced generalization. To address this, we investigate potential confounders -- whether synthetic or sampled from the data -- across two publicly available chest X-ray and CT datasets. We show that ImageNet and RadImageNet achieve comparable classification performance, yet ImageNet is much more prone to overfitting to confounders. We recommend that researchers using ImageNet-pretrained models reexamine their model robustness by conducting similar experiments.
+Provided are the implementations of
+
+* Confounder generation,
+* Fine-tuning, and
+* performance analysis as described in the paper.
+
+For access to the data used in the paper, please refer to:
+* [RadImageNet](https://github.com/BMEII-AI/RadImageNet) for pre-trained weights
+* [NIH CXR14](https://nihcc.app.box.com/v/ChestXray-NIHCC), and
+* [LIDC-IDRI](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254).
+Our dataset splits are provided in the data folder.
+
+The main files to run are:
+
+include_artifacts.py, include_lowpass.py, include_noise.py, gender.py (for confounder generation as described in the paper)
+fine-tuning.py (for fine-tuning the models on confounded targets and logging results)
+analysis.py (for pulling results together and plotting)
+
+Feel free to contact us for help with the reproduction of our experiments.
