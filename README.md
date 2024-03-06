@@ -1,1 +1,5 @@
-# source-matters
+# Source Matters: Source Dataset Impact on Model Robustness in Medical Imaging
+
+This repository contains the code and results included in the paper (currently under review, link coming later).
+
+Transfer learning has become an essential part of medical imaging classification algorithms, often leveraging ImageNet weights. However, the domain shift from natural to medical images has prompted alternatives such as RadImageNet, often demonstrating comparable classification performance. We argue that even if the performance is on par, using models pre-trained on medical datasets may offer benefits like enhanced generalization. To address this, we investigate potential confounders -- whether synthetic or sampled from the data -- across two publicly available chest X-ray and CT datasets. We show that ImageNet and RadImageNet achieve comparable classification performance, yet ImageNet is much more prone to overfitting to confounders. We recommend that researchers using ImageNet-pretrained models reexamine their model robustness by conducting similar experiments.
