@@ -2,7 +2,7 @@
 
 This repository contains the code and results included in the paper (currently under review, link coming later).
 
-Provided are the implementations of
+Provided are the implementations of:
 
 * Confounder generation,
 * fine-tuning, and
