@@ -19,6 +19,6 @@ The main files to run are:
 
 `include_tag.py`, `include_lowpass.py`, `include_noise.py`, `gender.py` (for confounder generation as described in the paper)
 `fine-tuning.py` (for fine-tuning the models on confounded targets and logging results)
-`analysis.py` (for pulling results together and plotting)
+`results_plots.ipynb` and `statistical_tests.ipynb`  (for pulling results together and plotting)
 
 Feel free to contact us for help with the reproduction of our experiments.
